@@ -24,7 +24,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour.Status m_NewStatus;
 
     #endregion // PROTECTED_MEMBER_VARIABLES
-    public Animator animator;
+
 
     #region UNITY_MONOBEHAVIOUR_METHODS
 
@@ -100,7 +100,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
 
-        animator.SetTrigger("Start");
+       
     }
 
 
