@@ -46,5 +46,10 @@ public class NavigationHandler : MonoBehaviour
         }
 
     }
+
+    public void OpenURL(string url)
+    {
+        Application.OpenURL(url);
+    }
     #endregion //PUBLIC_METHODS
 }
