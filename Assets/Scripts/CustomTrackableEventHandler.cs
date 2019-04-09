@@ -17,28 +17,19 @@ public class CustomTrackableEventHandler : DefaultTrackableEventHandler
     #region PROTECTED_METHODS
     protected override void OnTrackingFound()
     {
-        if(panelScan.activeSelf)
+        if (panelScan.activeSelf)
         { 
             panelScan.SetActive(false); 
         }
             
         if (currentPrefab == null)
         {
-            int prefabIndex = UnityEngine.Random.Range(0, 14);
-            currentPrefab = stickerPrefabs[prefabIndex];
-            Instantiate(currentPrefab, this.gameObject.transform, false);
+            int prefabIndex = UnityEngine.Random.Range(0, 17);
+            //currentPrefab = stickerPrefabs[prefabIndex];
+            currentPrefab = Instantiate(stickerPrefabs[prefabIndex], this.gameObject.transform, false);
         }
 
         base.OnTrackingFound();
-    }
-
-    protected override void OnTrackingLost()
-    {
-        if (!panelScan.activeSelf)
-        {
-            panelScan.SetActive(true);
-        }
-        base.OnTrackingLost();
     }
 
     #endregion //PROTECTED_METHODS
