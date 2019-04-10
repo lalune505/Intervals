@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StickersScene.unity
     guid: 1de732c86c5404b8b9409b5a7c07b8e1
+  - enabled: 1
+    path: Assets/Scenes/MappingScene.unity
+    guid: 5fea97d85f1254a3a83edd3ecee0a91f
   m_configObjects: {}

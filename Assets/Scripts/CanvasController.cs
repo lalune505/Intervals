@@ -10,7 +10,7 @@ public class CanvasController : MonoBehaviour
     public const string MenuScenePath = "Assets/Scenes/FirstScene.unity";
     public const string LoadingScenePath = "Assets/Scenes/LoadingScene.unity";
     public const string StickerScenePath = "Assets/Scenes/StickersScene.unity";
-    public const string MappingScenePath = "";
+    public const string MappingScenePath = "Assets/Scenes/MappingScene.unity";
 
    
     public static void LoadScene(string scenePath)
