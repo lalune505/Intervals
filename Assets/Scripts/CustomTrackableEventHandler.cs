@@ -24,7 +24,7 @@ public class CustomTrackableEventHandler : DefaultTrackableEventHandler
             
         if (currentPrefab == null)
         {
-            int prefabIndex = UnityEngine.Random.Range(0, 17);
+            int prefabIndex = UnityEngine.Random.Range(0, 26);
             //currentPrefab = stickerPrefabs[prefabIndex];
             currentPrefab = Instantiate(stickerPrefabs[prefabIndex], this.gameObject.transform, false);
         }
